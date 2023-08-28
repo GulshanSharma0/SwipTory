@@ -1,1 +1,1 @@
-export const SERVER_URL = 'http://localhost:2000';
+export const SERVER_URL = 'https://swipstorybackend-ajn6.onrender.com';
