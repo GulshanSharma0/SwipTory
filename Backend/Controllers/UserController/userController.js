@@ -12,22 +12,26 @@ const addStories = async (req, res) => {
            return res.status(400).json({message:'You already have 6 stories'});                   
     }
     const updatedStories = await Promise.all(
-      storiesToUpdate.map(async (updatedStory) => {
-        if (updatedStory._id) {
-          const existingStory = await Story.findOne({ _id: updatedStory._id });
-          if (existingStory) {
-            Object.assign(existingStory, updatedStory);
-            await existingStory.save();
-            return existingStory;
-          }
-        } else {
-          const newStory = new Story(updatedStory);
-          await newStory.save();
-          return newStory;
+  storiesToUpdate.map(async (updatedStory) => {
+    try {
+      if (updatedStory._id) {
+        const existingStory = await Story.findOne({ _id: updatedStory._id });
+        if (existingStory) {
+          Object.assign(existingStory, updatedStory);
+          await existingStory.save();
+          return existingStory;
         }
-      })
-    );
-
+      } else {
+        const newStory = new Story(updatedStory);
+        await newStory.save();
+        return newStory;
+      }
+    } catch (error) {
+      console.error('Error processing story:', error);
+      throw error; // Rethrow the error to be caught by the outer catch block
+    }
+  })
+);
 
     if (user) {
       const updatedStoryIds = updatedStories.map((story) => story._id);
