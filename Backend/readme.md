@@ -1,0 +1,10 @@
+# UserRouter
+  --> users/register(username,password)
+  --> users/login(username,password)
+  --> users/logout
+  --> stories/add
+  --> stories/edit
+  --> stories/like
+  --> stories/add-bookmark
+  --> stories/delete-bookmark
+  --> stories/filter?category=value
