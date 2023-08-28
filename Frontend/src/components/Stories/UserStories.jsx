@@ -72,7 +72,7 @@ const UserStories = () => {
       </div>
         </div>
       ) : (
-        <div style={{ height: "500px", width: "500px", margin: "0 auto" }}>
+        <div style={{ height: "280px", width: "280px", margin: "0 auto" }}>
           <img
             src={notFound}
             alt="not found stories"
