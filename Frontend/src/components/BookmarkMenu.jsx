@@ -35,7 +35,7 @@ const BookmarkMenu = ({ SetShowMenu }) => {
               style={{ height: "100%", width: "100%", objectFit: "cover" }}
             />
           </p>
-          <p>Karuna Yadav</p>
+          <p>username</p>
           <button
             className="button close-btn display-none"
             onClick={CloseMenu}
