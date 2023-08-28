@@ -13,7 +13,6 @@ const addStories = async (req, res) => {
     }
     const updatedStories = await Promise.all(
       storiesToUpdate.map(async (updatedStory) => {
-        console.log(updatedStory);
         if (updatedStory._id) {
           const existingStory = await Story.findOne({ _id: updatedStory._id });
           if (existingStory) {
