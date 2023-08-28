@@ -1,0 +1,49 @@
+.Menu-Wrapper {
+  box-shadow: 0px 4px 4px 0px #00000040;
+  background-color: #ffffff;
+  height:250px;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.menu-btn {
+  background: #ff7373;
+}
+
+.close-btn {
+  text-align: end;
+  display: block;
+  width: 100%;
+  padding: 0.6rem 0.7rem 0 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.DropDown-Btn-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2.4rem;
+  height: 87%;
+}
+
+
+@media only screen and (min-width: 40em) {
+    .Menu{
+        display: none;
+    }
+    .display-none{
+      display: none !important;
+    }
+    .Authenticate-Menu{
+      display: flex;
+      justify-content: flex-end;
+    }
+    .Authenticate-Menu-Wrapper{
+      width: 251px;
+      height: 170px !important;
+      padding-top: 0.8rem;
+    }
+}

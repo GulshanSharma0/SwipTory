@@ -1,0 +1,169 @@
+.AddStory-Container {
+  position: absolute;
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AddStory-Wrapper {
+  width: 682px;
+  height: 538px;
+}
+
+.Slide-Tab-Container {
+  display: flex;
+  /* justify-content: space-around; */
+  width: 90%;
+  padding: 0 0.9rem;
+  gap: 15px;
+}
+
+.Slide-Tab {
+  width: 84px;
+  height: 69px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0px 4px 15px 0px #0000001a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-active {
+  border: 2px solid #73abff;
+}
+
+.text-input {
+  border: 2px solid #000000;
+  border-radius: 2px;
+  height: 35px;
+  width: 230px;
+  outline: none;
+  font-weight: 700;
+  padding: 0 0.6rem;
+}
+.textarea-field {
+  border: 2px solid #000000;
+  border-radius: 2px;
+  width: 230px;
+  outline: none;
+  font-weight: 700;
+  padding: 0.6rem;
+  resize: none;
+}
+.select-field {
+  border: 2px solid #000000;
+  border-radius: 2px;
+  height: 35px;
+  width: 230px;
+  outline: none;
+  background-color: transparent;
+  font-weight: 500;
+  padding: 0 0.6rem;
+}
+.addstory-label {
+  width: 90px;
+  font-weight: 700;
+}
+.addstory-form-field {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.default-remove {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  width: 115px;
+  height: 41px;
+  border-radius: 20px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+}
+.prev-btn {
+  background: #7eff73;
+}
+
+.next-btn {
+  background: #73abff;
+}
+
+.submit-addstory-btn {
+  background: #ff7373;
+}
+.AddStory-Form-Buttons {
+  justify-content: space-around;
+}
+.Form-Tab-Wrapper {
+  margin-left: 2.4rem;
+}
+
+@media only screen and (max-width: 40em) {
+  .AddStory-Wrapper {
+    width: 257px !important;
+    height: 482px !important;
+  }
+  .Form-Flex {
+    flex-direction: column !important;
+    align-items: flex-end !important;
+    padding-top: 1rem !important;
+  }
+  .Form-Tab-Wrapper {
+    display: flex !important;
+  }
+  .Slide-Tab-Container {
+    margin-top: 1rem;
+    flex-direction: column !important;
+    width: auto;
+    justify-content: normal !important;
+  }
+  .Slide-Tab {
+    width: 28px;
+    height: 38px;
+  }
+  .slide-label {
+    font-size: 9px !important;
+    text-align: center !important;
+  }
+  .addstory-form-field {
+    width: 100%;
+    justify-content: normal !important;
+    align-items: normal !important;
+    flex-direction: column !important;
+  }
+  .text-input,
+  .textarea-field,
+  .select-field {
+    width: 174px !important;
+  }
+  .textarea-field {
+    height: 60px !important;
+  }
+
+  .prev-next-btn-container {
+    display: none !important;
+  }
+
+  .Form-Tab-Wrapper {
+    margin-left: 0;
+  }
+
+  .close-btn-slide {
+    height: 13px !important;
+    width: 13px !important; 
+    top: -3px !important;
+    right: -5px !important;
+  }
+  .close-btn-slide-icon {
+    font-size: 9px !important;
+    vertical-align: top !important;
+  }
+}

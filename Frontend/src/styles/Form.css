@@ -1,0 +1,138 @@
+.Form-Modal{
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    top: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.Form-Container{
+    height: 482px;
+    width: 257px;
+    border: 1px solid #000000;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px 0px #FFFFFF40;
+    border-radius: 20px;
+    margin: 2rem;
+}
+
+.Form-Flex{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.9rem;
+}
+.Form-Close-Button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    border: 2px solid #FF0000;
+}
+
+.Outline-Close-Button{
+    color: #FF0000;
+    font-size: 1rem;
+}
+.Form-Title-Wrapper{
+    text-align: center;
+    padding: 1rem 0;
+}
+.Form-Title{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.Form{
+    margin-top: 2rem;
+}
+.Form-Field-Wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Form-Input{
+    width: 150px;
+    height: 35px;
+    border: 2px solid #000000;
+    margin: 0.9rem 0;
+    padding: 0.2rem 0.4rem;
+}
+.Form-Label{
+    font-size: 15px;
+    font-weight: 700;
+}
+.Input-Field{
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 90%;
+}
+
+input::placeholder{
+   font-size: 10px;
+   line-height: 13.2px;
+}
+.Password-Eye-Button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.Password-Eye{
+    font-size: 1.2rem;
+}
+.Form-Input-Flex{
+    display: flex;
+}
+.Submit-Button-Wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.7rem;
+}
+.Submit-Button{
+    outline: none;
+    border: none;
+    width: 129px;
+    height: 45px;
+    border-radius: 20px;
+    background: #73ABFF;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+    color: #FFFFFF;
+
+}
+
+@media only screen and (min-width: 40em) {
+    .Form-Container{
+        width: 624px;
+        height: 400px;
+    }
+    .Form-Flex{
+        padding:2.4rem 2.4rem 0 0;
+    }
+    .Submit-Button-Wrapper{
+        margin-top:1rem;
+    }
+    .Form-Field-Wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .Form-Input{
+        width: 245px;
+    }
+    .Submit-Button{
+        color: #000;
+    }
+}
+
+

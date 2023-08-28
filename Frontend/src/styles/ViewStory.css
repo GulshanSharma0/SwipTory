@@ -1,0 +1,26 @@
+.ViewStory-Container {
+  position: absolute;
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ViewStory-Wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+}
+
+ .forwardArrowBtn,.backArrowBtn{
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-size: 2rem;
+}

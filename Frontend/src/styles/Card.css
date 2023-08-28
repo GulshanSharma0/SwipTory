@@ -1,0 +1,46 @@
+.scroll_carousel{
+  margin: 1rem 0;
+}
+.Card {
+  width: 143px;
+  height: 96px;
+  border-radius: 15px;
+  position: relative;
+  margin: 0 0.6rem;
+  /* border: 5px solid #00ACD2; */
+  /* background-image: url('../assets/images/Food.png'); */
+  background-position: center;
+}
+
+.filter-active{
+  border: 5px solid #00ACD2;
+  
+}
+
+.border-none{
+  border:none;
+}
+
+.Card-Title{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  width: 96%;
+  text-align: center;
+}
+
+
+@media only screen and (min-width: 40em) {
+  .scroll_carousel{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+
+
+

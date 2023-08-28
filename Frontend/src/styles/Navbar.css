@@ -1,0 +1,89 @@
+
+
+.Navbar-Wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 0.6rem;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  position: relative;
+}
+
+.logo {
+  vertical-align: middle;
+}
+
+.button {
+  outline: none;
+  border: none;
+}
+
+.Navbar-Btn {
+  color: #fff;
+  font-size: 18px;
+  height: 45px;
+  width: 136px;
+  border-radius: 20px;
+  font-size: 18px;
+  
+}
+
+.Register-Btn {
+  background: #ff7373;
+}
+.SignIn-Btn {
+  background: #73abff;
+}
+
+.Menu-Bar-Icon,.Menu-close-Icon {
+  font-size: 20px;
+  stroke-width: 20;
+}
+
+.Menu-Bar{
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.Button-Wrapper{
+   
+    display: none;
+}
+.Link-Href{
+  text-decoration: none;
+  color: #fff;
+}
+
+.bookNav{
+  display:none;
+}
+
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 40em) {
+      .Menu-Bar{
+        display: none;
+      }
+      .Button-Wrapper,.Button-Wrapper-Authenticate{
+        display: flex;
+        gap: 1rem;
+      }
+      .bookNav{
+        display: block;
+      }
+      .show-bar{
+        display: block;
+      }
+      
+}
+
+/* Medium devices such as tablets (768px and up) */
+/* @media only screen and (min-width: 48em) {...} */
+
+/* Large devices such as laptops (1024px and up) */
+/* @media only screen and (min-width: 64em) {...} */
+
+/* Largest devices such as desktops (1280px and up) */
+/* @media only screen and (min-width: 80em) {...} */
+
+
