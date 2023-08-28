@@ -41,6 +41,7 @@ const login = async (req, res) => {
         httpOnly: true,
         maxAge: 3600000,
         secure: false,
+        sameSite: 'none',
       });
       res.status(200).json({
         message: `${username} is logged in now`,
